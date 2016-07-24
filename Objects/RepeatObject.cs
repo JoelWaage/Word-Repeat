@@ -1,9 +1,9 @@
-using Systme.Collections.Generic;
+using System.Collections.Generic;
 using System;
 
 namespace WordRepeat.Objects
 {
-  public class Repeat
+  public class RepeatCounter
   {
 
 
