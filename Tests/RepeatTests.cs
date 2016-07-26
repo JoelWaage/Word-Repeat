@@ -12,6 +12,12 @@ namespace WordRepeat
       Assert.Equal(true, testRepeat.CountRepeats());
     }
 
+    [Fact]
+    public void CountRepeats_IsSingleLetterRepeat_false()
+    {
+      Repeat testRepeat = new Repeat("a", "b");
+      Assert.Equal(false, testRepeat.CountRepeats());
+    }
 
 
 
