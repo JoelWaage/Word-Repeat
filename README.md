@@ -23,8 +23,6 @@ _TBD_
 |User inputs a WORD in the word form and that word and a different word in the SENTENCE form |WORD: ab // SENT:  ab cd | 1 |
 |User inputs a letter in the WORD form and the same letter twice in the SENTENCE form  |WORD: a // SENT: a a | 2 |
 |User inputs a word in the WORD form and the same word twice in the SENTENCE form  |WORD: ab // SENT: ab ab  | 2 |
-|User inputs  a letter in the WORD form and that letter as well as other letters in the SENTENCE form  |WORD: a // SENT: b a c e t | 1 |
-|User inputs a word in the WORD form and that word as well as other words in the SENTENCE form |WORD: ab // SENT: bk ab lt ll| 1 |
 |User inputs a letter in the WORD form and that letter multiple times as well as other letters in the SENTENCE form |WORD: a // SENT: a b c a e c a | 3|
 |User inputs a word in the WORD form and that word multiple times as well as other word in the SENTENCE form |WORD: ab // SENT: ab tr ab cd ab| 3|
 

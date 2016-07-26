@@ -5,16 +5,19 @@ namespace WordRepeat
 {
   public class Repeat
   {
+// Set Variables
     private string _word;
     private string _sentence;
     private int _repeatCount;
 
+// Constructor
     public Repeat(string inputWord, string inputSentence)
     {
       _word = inputWord;
       _sentence = inputSentence;
     }
 
+// Getters and Setters
     public string GetWord()
     {
       return _word;
@@ -33,7 +36,7 @@ namespace WordRepeat
       _sentence = newSentence;
     }
 
-
+// Methods
     public int CountRepeats()
     {
       string[] sentence;

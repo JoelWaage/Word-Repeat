@@ -57,6 +57,19 @@ namespace WordRepeat
       Assert.Equal(2, testRepeat.CountRepeats());
     }
 
+    [Fact]
+    public void CountRepeats_IsLetterMatchedMultipleTimes_3()
+    {
+      Repeat testRepeat = new Repeat("a", "a b c a e c a");
+      Assert.Equal(3, testRepeat.CountRepeats());
+    }
+    [Fact]
+    public void CountRepeats_IsStringMatchedMultipleTimes_3()
+    {
+      Repeat testRepeat = new Repeat("ab", "ab tr ab cd ab");
+      Assert.Equal(3, testRepeat.CountRepeats());
+    }
+
 
 
   }
