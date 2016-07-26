@@ -33,11 +33,6 @@ namespace WordRepeat
       _sentence = newSentence;
     }
 
-    public int GetCount()
-    {
-      return _repeatCount;
-    }
-
 
     public int CountRepeats()
     {
@@ -49,7 +44,7 @@ namespace WordRepeat
 
       foreach(var piece in sentence)
       {
-        if (this.GetWord() == this.GetSentence())
+        if (this.GetWord() == piece)
         {
           _repeatCount++;
         }

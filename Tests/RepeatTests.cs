@@ -31,6 +31,19 @@ namespace WordRepeat
       Assert.Equal(0, testRepeat.CountRepeats());
     }
 
+    [Fact]
+    public void CountRepeats_IsOnOfSeveralLettersSame_1()
+    {
+      Repeat testRepeat = new Repeat("a", "a b c");
+      Assert.Equal(1, testRepeat.CountRepeats());
+    }
+    [Fact]
+    public void CountRepeats_IsOneOfSeveralLettersNotSame_0()
+    {
+      Repeat testRepeat = new Repeat("a", "b c d");
+      Assert.Equal(0, testRepeat.CountRepeats());
+    }
+
 
 
 
