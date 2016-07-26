@@ -35,7 +35,14 @@ namespace WordRepeat
 
     public bool CountRepeats()
     {
-      return false;
+      if (GetWord() == GetSentence())
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
 
     }
 
