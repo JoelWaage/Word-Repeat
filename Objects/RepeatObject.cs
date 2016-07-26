@@ -40,9 +40,9 @@ namespace WordRepeat
     public int CountRepeats()
     {
       string[] sentence;
-      sentence = this.GetSentence().Split(default(string[]), StringSplitOptions.RemoveEmptyEntries);
-      sentence = this.GetSentence().Split((string[]) null, StringSplitOptions.RemoveEmptyEntries);
-      sentence = this.GetSentence().Split(null as string[], StringSplitOptions.RemoveEmptyEntries);
+      sentence = this.GetSentence().ToLower().Split(default(string[]), StringSplitOptions.RemoveEmptyEntries);
+      sentence = this.GetSentence().ToLower().Split((string[]) null, StringSplitOptions.RemoveEmptyEntries);
+      sentence = this.GetSentence().ToLower().Split(null as string[], StringSplitOptions.RemoveEmptyEntries);
 
 
       foreach(var piece in sentence)
