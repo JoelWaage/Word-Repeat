@@ -1,6 +1,6 @@
 using Nancy;
 using System.Collections.Generic;
-using WordRepeat.Objects;
+using WordRepeat;
 
 namespace WordRepeat
 {

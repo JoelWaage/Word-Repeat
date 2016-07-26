@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System;
 
-namespace WordRepeat.Objects
+namespace WordRepeat
 {
-  public class RepeatCounter
+  public class Repeat
   {
     private string _word;
     private string _sentence;
@@ -25,7 +25,7 @@ namespace WordRepeat.Objects
 
     public string GetSentence()
     {
-      return _comparison;
+      return _sentence;
     }
     public void SetSentence(string newSentence)
     {
