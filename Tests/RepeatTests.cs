@@ -6,29 +6,29 @@ namespace WordRepeat
   public class RepeatTest
   {
     [Fact]
-    public void CountRepeats_IsSingleLetterRepeat_true()
+    public void CountRepeats_IsSingleLetterRepeat_1()
     {
       Repeat testRepeat = new Repeat("a", "a");
-      Assert.Equal(true, testRepeat.CountRepeats());
+      Assert.Equal(1, testRepeat.CountRepeats());
     }
     [Fact]
-    public void CountRepeats_IsSingleLetterNotRepeat_false()
+    public void CountRepeats_IsSingleLetterNotRepeat_0()
     {
       Repeat testRepeat = new Repeat("a", "b");
-      Assert.Equal(false, testRepeat.CountRepeats());
+      Assert.Equal(0, testRepeat.CountRepeats());
     }
 
     [Fact]
-    public void CountRepeats_IsStringRepeat_true()
+    public void CountRepeats_IsStringRepeat_1()
     {
       Repeat testRepeat = new Repeat("ab", "ab");
-      Assert.Equal(true, testRepeat.CountRepeats());
+      Assert.Equal(1, testRepeat.CountRepeats());
     }
     [Fact]
-    public void CountRepeats_IsStringNotRepeat_false()
+    public void CountRepeats_IsStringNotRepeat_0()
     {
-      Repeat testRepeat = new Repeat("ab cd", "cd ef");
-      Assert.Equal(false, testRepeat.CountRepeats());
+      Repeat testRepeat = new Repeat("ab", "cd");
+      Assert.Equal(0, testRepeat.CountRepeats());
     }
 
 

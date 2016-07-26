@@ -7,6 +7,7 @@ namespace WordRepeat
   {
     private string _word;
     private string _sentence;
+    private int _repeatCount;
 
     public Repeat(string inputWord, string inputSentence)
     {
@@ -18,7 +19,7 @@ namespace WordRepeat
     {
       return _word;
     }
-    public void SetWrod(string newWord)
+    public void SetWord(string newWord)
     {
       _word = newWord;
     }
@@ -32,28 +33,28 @@ namespace WordRepeat
       _sentence = newSentence;
     }
 
+    public int GetCount()
+    {
+      return _repeatCount;
+    }
 
-    public bool CountRepeats()
+
+    public int CountRepeats()
     {
       string[] sentence;
-
       sentence = this.GetSentence().Split(default(string[]), StringSplitOptions.RemoveEmptyEntries);
-
       sentence = this.GetSentence().Split((string[]) null, StringSplitOptions.RemoveEmptyEntries);
-
       sentence = this.GetSentence().Split(null as string[], StringSplitOptions.RemoveEmptyEntries);
 
-      Console.WriteLine(sentence[0]);
 
-      if (this.GetWord() == this.GetSentence())
+      foreach(var piece in sentence)
       {
-        return true;
+        if (this.GetWord() == this.GetSentence())
+        {
+          _repeatCount++;
+        }
       }
-      else
-      {
-        return false;
-      }
-
+      return _repeatCount;
     }
   }
 }
