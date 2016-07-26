@@ -27,7 +27,7 @@ namespace WordRepeat
     [Fact]
     public void CountRepeats_IsStringNotRepeat_false()
     {
-      Repeat testRepeat = new Repeat("ab", "cd");
+      Repeat testRepeat = new Repeat("ab cd", "cd ef");
       Assert.Equal(false, testRepeat.CountRepeats());
     }
 

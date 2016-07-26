@@ -35,7 +35,17 @@ namespace WordRepeat
 
     public bool CountRepeats()
     {
-      if (GetWord() == GetSentence())
+      string[] sentence;
+
+      sentence = this.GetSentence().Split(default(string[]), StringSplitOptions.RemoveEmptyEntries);
+
+      sentence = this.GetSentence().Split((string[]) null, StringSplitOptions.RemoveEmptyEntries);
+
+      sentence = this.GetSentence().Split(null as string[], StringSplitOptions.RemoveEmptyEntries);
+
+      Console.WriteLine(sentence[0]);
+
+      if (this.GetWord() == this.GetSentence())
       {
         return true;
       }
@@ -45,10 +55,5 @@ namespace WordRepeat
       }
 
     }
-
-
-
-
-
   }
 }
