@@ -25,6 +25,8 @@ _TBD_
 |User inputs a word in the WORD form and the same word twice in the SENTENCE form  |WORD: ab // SENT: ab ab  | 2 |
 |User inputs a letter in the WORD form and that letter multiple times as well as other letters in the SENTENCE form |WORD: a // SENT: a b c a e c a | 3|
 |User inputs a word in the WORD form and that word multiple times as well as other word in the SENTENCE form |WORD: ab // SENT: ab tr ab cd ab| 3|
+|User inputs the same letter in WORD and SENTENCE, but with different cases |WORD: a // SENT: A| 1 |
+|User inputs the same letter in WORD and SENTENCE, but with punctuation in SENTENCE|WORD: a // SENT: a?| 1 |
 
 ## Known Bugs
 

@@ -70,7 +70,26 @@ namespace WordRepeat
       Assert.Equal(3, testRepeat.CountRepeats());
     }
 
+    [Fact]
+    public void CountRepeats_IsSentenceUpperCase_1()
+    {
+      Repeat testRepeat = new Repeat("a", "A");
+      Assert.Equal(1, testRepeat.CountRepeats());
+    }
 
+    [Fact]
+    public void CountRepeats_IsWordUpperCase_1()
+    {
+      Repeat testRepeat = new Repeat("A", "a");
+      Assert.Equal(1, testRepeat.CountRepeats());
+    }
+
+    [Fact]
+    public void CountRepeats_IsSentencePunctuated_1()
+    {
+      Repeat testRepeat = new Repeat("a", "a?");
+      Assert.Equal(1, testRepeat.CountRepeats());
+    }
 
   }
 }
