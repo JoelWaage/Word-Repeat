@@ -40,7 +40,7 @@ namespace WordRepeat
     public int CountRepeats()
     {
       string[] sentence;
-      sentence = this.GetSentence().ToLower().Split();
+      sentence = this.GetSentence().ToLower().Replace(","," ").Replace("."," ").Replace("?"," ").Replace("!"," ").Replace("-"," ").Split();
 
       foreach(var piece in sentence)
       {
