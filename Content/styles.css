@@ -1,0 +1,17 @@
+body {
+  background-image: url(/Content/img/background.jpg);
+  color: white;
+}
+
+#input-word {
+  color: black;
+}
+
+#input-sentence {
+  color: black;
+}
+
+p {
+  font-size: 4em;
+  text-align: center;
+}
